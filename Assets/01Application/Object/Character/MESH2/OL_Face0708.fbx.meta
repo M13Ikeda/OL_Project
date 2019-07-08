@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a40da48d3ec9d9242b60e2f8aa1e6fe2
+guid: c8812f91b48de054cbed16b85621a668
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,26 +8,10 @@ ModelImporter:
     2100000: A_face
     2100002: A_brows
     2100004: A_eyes
-    4300000: face.006
-    4300002: face
+    4300000: face
     9500000: //RootNode
     13700000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: A_brows
-    second: {fileID: 2100000, guid: fe3de998869ad204c908d08a57a44a8e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: A_eyes
-    second: {fileID: 2100000, guid: a86ac2b63eb17384cb187ebefb283e42, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: A_face
-    second: {fileID: 2100000, guid: 88f11cbb0a83ef74688aa37e22675af6, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -78,7 +62,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 0.01
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60

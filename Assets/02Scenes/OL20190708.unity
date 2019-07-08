@@ -596,6 +596,162 @@ MonoBehaviour:
         m_Calls: []
       m_TypeName: DKF.JoyconController+PhysicalEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
+  - name: Surprised
+    enablePrimary: 1
+    primary_hand: 0
+    primary_button: 0
+    enableModifier: 0
+    modifier_hand: 0
+    modifier_button: 0
+    enableStick: 0
+    stickHand: 0
+    stickDirection: 0
+    press:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90064045}
+          m_MethodName: FaceExpressionOn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    up:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90064045}
+          m_MethodName: FaceExpressionOff
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    down:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    upWithPhysical:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: DKF.JoyconController+PhysicalEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - name: Disappointed
+    enablePrimary: 1
+    primary_hand: 0
+    primary_button: 1
+    enableModifier: 0
+    modifier_hand: 0
+    modifier_button: 0
+    enableStick: 0
+    stickHand: 0
+    stickDirection: 0
+    press:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90064045}
+          m_MethodName: FaceExpressionOn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    up:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90064045}
+          m_MethodName: FaceExpressionOff
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    down:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    upWithPhysical:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: DKF.JoyconController+PhysicalEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - name: Sad
+    enablePrimary: 1
+    primary_hand: 0
+    primary_button: 4
+    enableModifier: 0
+    modifier_hand: 0
+    modifier_button: 0
+    enableStick: 0
+    stickHand: 0
+    stickDirection: 0
+    press:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90064045}
+          m_MethodName: FaceExpressionOn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    up:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90064045}
+          m_MethodName: FaceExpressionOff
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    down:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    upWithPhysical:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: DKF.JoyconController+PhysicalEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!114 &90064045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,7 +763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c283937340a039449c3291eec29a666, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetGameObjectName_Face: face0624
+  TargetGameObjectName_Face: face
   TargetGameObjectName_Brow: 
   TargetGameObjectName_L_Eye: 
   TargetGameObjectName_R_Eye: 
@@ -669,6 +825,114 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: FacialMorphing+FacialExpression, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
+  - name: Surprised
+    facial:
+      Face:
+      - Surprised
+      Eyebrow: []
+      L_Eye: []
+      R_Eye: []
+      Accent: []
+    EnableAutoEyeBlink: 0
+    BlendingBlink: 0
+    key: 100
+    OnChangeFacial:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90064045}
+          m_MethodName: OnFacialAction
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: FacialMorphing+FacialExpression, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - name: Disappointed
+    facial:
+      Face:
+      - Disappointed
+      Eyebrow: []
+      L_Eye: []
+      R_Eye: []
+      Accent: []
+    EnableAutoEyeBlink: 0
+    BlendingBlink: 0
+    key: 102
+    OnChangeFacial:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90064045}
+          m_MethodName: OnFacialAction
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: FacialMorphing+FacialExpression, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - name: Sad
+    facial:
+      Face:
+      - Sad
+      Eyebrow: []
+      L_Eye: []
+      R_Eye: []
+      Accent: []
+    EnableAutoEyeBlink: 0
+    BlendingBlink: 0
+    key: 103
+    OnChangeFacial:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90064045}
+          m_MethodName: OnFacialAction
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: FacialMorphing+FacialExpression, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - name: Angry
+    facial:
+      Face:
+      - Angry
+      Eyebrow: []
+      L_Eye: []
+      R_Eye: []
+      Accent: []
+    EnableAutoEyeBlink: 0
+    BlendingBlink: 0
+    key: 104
+    OnChangeFacial:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90064045}
+          m_MethodName: OnFacialAction
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: FacialMorphing+FacialExpression, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!114 &90064046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -685,6 +949,10 @@ MonoBehaviour:
   ref_BlendShapesList:
   - smile
   - wink
+  - Surprised
+  - Disappointed
+  - Sad
+  - Angry
   facialMorphing: {fileID: 90064045}
   ratio_Close: 85
   ratio_HalfClose: 20
@@ -7520,7 +7788,7 @@ GameObject:
   - component: {fileID: 1305752697}
   - component: {fileID: 1305752696}
   m_Layer: 0
-  m_Name: face0624
+  m_Name: face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7568,7 +7836,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: dbe524bea3230844f8fffc3a53f70491, type: 3}
+  m_Mesh: {fileID: 4300000, guid: c8812f91b48de054cbed16b85621a668, type: 3}
   m_Bones: []
   m_BlendShapeWeights:
   - 0
@@ -8723,7 +8991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1466003601}
   m_Layer: 0
-  m_Name: Root
+  m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
