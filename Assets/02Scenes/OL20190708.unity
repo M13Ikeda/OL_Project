@@ -599,7 +599,7 @@ MonoBehaviour:
   - name: Surprised
     enablePrimary: 1
     primary_hand: 0
-    primary_button: 0
+    primary_button: 4
     enableModifier: 0
     modifier_hand: 0
     modifier_button: 0
@@ -651,7 +651,7 @@ MonoBehaviour:
   - name: Disappointed
     enablePrimary: 1
     primary_hand: 0
-    primary_button: 1
+    primary_button: 5
     enableModifier: 0
     modifier_hand: 0
     modifier_button: 0
@@ -703,7 +703,7 @@ MonoBehaviour:
   - name: Sad
     enablePrimary: 1
     primary_hand: 0
-    primary_button: 4
+    primary_button: 1
     enableModifier: 0
     modifier_hand: 0
     modifier_button: 0
@@ -752,6 +752,110 @@ MonoBehaviour:
         m_Calls: []
       m_TypeName: DKF.JoyconController+PhysicalEvent, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
+  - name: Angry
+    enablePrimary: 1
+    primary_hand: 0
+    primary_button: 0
+    enableModifier: 0
+    modifier_hand: 0
+    modifier_button: 0
+    enableStick: 0
+    stickHand: 0
+    stickDirection: 0
+    press:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90064045}
+          m_MethodName: FaceExpressionOn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    up:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90064045}
+          m_MethodName: FaceExpressionOff
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    down:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    upWithPhysical:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: DKF.JoyconController+PhysicalEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - name: Guruguru
+    enablePrimary: 1
+    primary_hand: 0
+    primary_button: 11
+    enableModifier: 0
+    modifier_hand: 0
+    modifier_button: 0
+    enableStick: 0
+    stickHand: 0
+    stickDirection: 0
+    press:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90064045}
+          m_MethodName: FaceExpressionOn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    up:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90064045}
+          m_MethodName: FaceExpressionOff
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    down:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    upWithPhysical:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: DKF.JoyconController+PhysicalEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!114 &90064045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -763,12 +867,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c283937340a039449c3291eec29a666, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetGameObjectName_Face: face
+  TargetGameObjectName_Face: Face
   TargetGameObjectName_Brow: 
   TargetGameObjectName_L_Eye: 
   TargetGameObjectName_R_Eye: 
   TargetGameObjectName_Accent: 
-  BlendingPower: 70
+  BlendingPower: 100
   enableKeybord: 1
   expressionList:
   - name: Smile
@@ -933,6 +1037,33 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: FacialMorphing+FacialExpression, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
+  - name: Guruguru
+    facial:
+      Face:
+      - Guruguru
+      Eyebrow: []
+      L_Eye: []
+      R_Eye: []
+      Accent: []
+    EnableAutoEyeBlink: 0
+    BlendingBlink: 0
+    key: 106
+    OnChangeFacial:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90064045}
+          m_MethodName: OnFacialAction
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: FacialMorphing+FacialExpression, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!114 &90064046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -945,14 +1076,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 1
-  ref_FACIAL: {fileID: 1305752696}
+  ref_FACIAL: {fileID: 745619074}
   ref_BlendShapesList:
-  - smile
-  - wink
-  - Surprised
-  - Disappointed
-  - Sad
-  - Angry
+  - EyeBlink
   facialMorphing: {fileID: 90064045}
   ratio_Close: 85
   ratio_HalfClose: 20
@@ -2723,7 +2849,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 370880420}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.752, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2042860138}
@@ -3445,6 +3571,116 @@ Transform:
   m_Father: {fileID: 1786607212}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &508824559
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 992833253}
+    m_Modifications:
+    - target: {fileID: 13700000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5651125
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.076457836
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5137102
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.48590317
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5137104
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.48590282
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: 0.016116355
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0.00047321036
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 0.00083085336
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 0.0011523357
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 0.0006573
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 101.986244
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 101.986244
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 101.98629
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_Name
+      value: Face
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fd2ba49c5eb48c0479f5fd563366cc01, type: 2}
+    - target: {fileID: 13700000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ab696fbca98c55408578509ef92a0eb, type: 2}
+    - target: {fileID: 13700000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6fb164ecf877c964f9d80a515f7e1004, type: 2}
+    - target: {fileID: 13700000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 01818e1143e83f245a1c37f02a4deab3, type: 2}
+    - target: {fileID: 13700000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[10]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b853807f0ae45264a85691330649dfa3, type: 3}
+  m_IsPrefabAsset: 0
 --- !u!1 &521612762
 GameObject:
   m_ObjectHideFlags: 0
@@ -4415,6 +4651,16 @@ Transform:
   m_Father: {fileID: 995499334}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 5.998, y: 88.100006, z: 155.281}
+--- !u!137 &745619074 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 13700000, guid: b853807f0ae45264a85691330649dfa3,
+    type: 3}
+  m_PrefabInternal: {fileID: 508824559}
+--- !u!4 &745619076 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: b853807f0ae45264a85691330649dfa3,
+    type: 3}
+  m_PrefabInternal: {fileID: 508824559}
 --- !u!1 &762244130
 GameObject:
   m_ObjectHideFlags: 0
@@ -4872,7 +5118,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 797547019}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1700490119}
@@ -4893,7 +5139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0b97b38f2f1fd24185315141a6c6a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinnedMeshRenderer: {fileID: 1305752696}
+  skinnedMeshRenderer: {fileID: 745619074}
   visemeToBlendTargets: 00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0300000003000000030000000300000003000000
   enableVisemeTestKeys: 0
   visemeTestKeys: 600000000900000071000000770000006500000072000000740000007900000075000000690000006f000000700000005b0000005d0000005c000000
@@ -6088,8 +6334,8 @@ Transform:
   m_LocalScale: {x: 0.99999994, y: 0.9999998, z: 1.0000001}
   m_Children:
   - {fileID: 1369336161}
-  - {fileID: 1305752697}
   - {fileID: 1194123115}
+  - {fileID: 745619076}
   - {fileID: 265118194}
   m_Father: {fileID: 1217795059}
   m_RootOrder: 0
@@ -7196,7 +7442,7 @@ Transform:
   m_LocalScale: {x: 101.986244, y: 101.986244, z: 101.98629}
   m_Children: []
   m_Father: {fileID: 992833253}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1194123116
 MeshRenderer:
@@ -7214,7 +7460,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100016, guid: 992d4426d8665b14f9739becef8568ab, type: 3}
+  - {fileID: 2100000, guid: 09d10d547cc855f47952ff7bef194364, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7777,107 +8023,6 @@ MonoBehaviour:
   - {fileID: 928269373}
   - {fileID: 1275871830}
   panelColliders: []
---- !u!1 &1305752695
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 100002, guid: 885e2a2c934c2e4409376bd7a45a85dc,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1305752697}
-  - component: {fileID: 1305752696}
-  m_Layer: 0
-  m_Name: face
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!137 &1305752696
-SkinnedMeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 13700000, guid: 885e2a2c934c2e4409376bd7a45a85dc,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1305752695}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: fd2ba49c5eb48c0479f5fd563366cc01, type: 2}
-  - {fileID: 2100000, guid: 4ab696fbca98c55408578509ef92a0eb, type: 2}
-  - {fileID: 2100000, guid: 6fb164ecf877c964f9d80a515f7e1004, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  serializedVersion: 2
-  m_Quality: 0
-  m_UpdateWhenOffscreen: 1
-  m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: c8812f91b48de054cbed16b85621a668, type: 3}
-  m_Bones: []
-  m_BlendShapeWeights:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  m_RootBone: {fileID: 0}
-  m_AABB:
-    m_Center: {x: 0, y: 0.016116355, z: 0.00049943925}
-    m_Extent: {x: 0.00083085336, y: 0.0011523357, z: 0.0006310711}
-  m_DirtyAABB: 0
---- !u!4 &1305752697
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 400002, guid: 885e2a2c934c2e4409376bd7a45a85dc,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1305752695}
-  m_LocalRotation: {x: -0.51371026, y: 0.48590308, z: 0.5137104, w: 0.48590276}
-  m_LocalPosition: {x: 1.5695, y: 0.0763, z: -0.0011}
-  m_LocalScale: {x: 101.98624, y: 101.98628, z: 101.98627}
-  m_Children: []
-  m_Father: {fileID: 992833253}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1310408269
 GameObject:
   m_ObjectHideFlags: 0
