@@ -110,7 +110,7 @@ Material:
     - _BaseColor_Step: 0.462
     - _BaseShade_Feather: 0.022
     - _BumpScale: 1
-    - _CullMode: 2
+    - _CullMode: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0

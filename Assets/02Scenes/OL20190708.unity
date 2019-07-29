@@ -395,6 +395,50 @@ MonoBehaviour:
   sphereColliders: []
   capsuleColliders: []
   panelColliders: []
+--- !u!1 &82500504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 82500505}
+  - component: {fileID: 82500506}
+  m_Layer: 0
+  m_Name: 'SholRCol '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &82500505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82500504}
+  m_LocalRotation: {x: 0.026387414, y: -0.020935081, z: -0.6811619, w: 0.7313577}
+  m_LocalPosition: {x: -0.164, y: -0.043, z: -0.018}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 479302785}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 87.761, y: -37.044003, z: -36.797}
+--- !u!114 &82500506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82500504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f228c6e846db8bd4ca8c289bdb7565b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0.075
+  height: 0.27
+  linkedRenderer: {fileID: 0}
+  shouldDrawGizmosThisFrame: 0
 --- !u!1 &84168964
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,7 +517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SubjectName: Skeleton
-  ServerHost: localhost:3883
+  ServerHost: 192.168.1.160:3883
   UpdateScaleFromStream: 0
   IsStreamYUp: 1
   InputScale: 0.01
@@ -1261,7 +1305,7 @@ MonoBehaviour:
   yAngleLimits:
     active: 1
     min: -55
-    max: 5
+    max: 30
   zAngleLimits:
     active: 1
     min: -25
@@ -2248,19 +2292,20 @@ MonoBehaviour:
   angularStiffness: 100
   yAngleLimits:
     active: 1
-    min: -45
+    min: -95
     max: 0
   zAngleLimits:
     active: 1
-    min: -1
+    min: -118
     max: 1
   lengthLimitTargets: []
-  radius: 0.054
+  radius: 0.03
   sphereColliders: []
   capsuleColliders:
   - {fileID: 1940240933}
   - {fileID: 928269373}
   - {fileID: 1275871830}
+  - {fileID: 82500506}
   panelColliders: []
 --- !u!1 &288782061
 GameObject:
@@ -2819,7 +2864,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &370880421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3015,7 +3060,7 @@ Transform:
   m_Children:
   - {fileID: 587711429}
   m_Father: {fileID: 1621683725}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &412141293
 GameObject:
@@ -3079,6 +3124,50 @@ MonoBehaviour:
   sphereColliders: []
   capsuleColliders: []
   panelColliders: []
+--- !u!1 &418869675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 418869676}
+  - component: {fileID: 418869677}
+  m_Layer: 0
+  m_Name: SholLCol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &418869676
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 418869675}
+  m_LocalRotation: {x: 0.7249258, y: -0.6811538, z: -0.07200923, w: 0.07298555}
+  m_LocalPosition: {x: 0.16475235, y: -0.028859954, z: -0.027650084}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1621683725}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 87.761, y: -37.044003, z: -36.797}
+--- !u!114 &418869677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 418869675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f228c6e846db8bd4ca8c289bdb7565b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0.075
+  height: 0.27
+  linkedRenderer: {fileID: 0}
+  shouldDrawGizmosThisFrame: 0
 --- !u!1 &426062335
 GameObject:
   m_ObjectHideFlags: 0
@@ -3414,6 +3503,7 @@ Transform:
   m_LocalPosition: {x: -0.023908572, y: -0.0013492906, z: -0.029485654}
   m_LocalScale: {x: 0.99999994, y: 1, z: 0.99999994}
   m_Children:
+  - {fileID: 82500505}
   - {fileID: 580532802}
   m_Father: {fileID: 1745287082}
   m_RootOrder: 3
@@ -3508,7 +3598,10 @@ MonoBehaviour:
   lengthLimitTargets: []
   radius: 0.02
   sphereColliders: []
-  capsuleColliders: []
+  capsuleColliders:
+  - {fileID: 1940240933}
+  - {fileID: 928269373}
+  - {fileID: 1275871830}
   panelColliders: []
 --- !u!1 &491674148
 GameObject:
@@ -4030,7 +4123,7 @@ Transform:
   m_Children:
   - {fileID: 528837175}
   m_Father: {fileID: 479302785}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &585701123
 GameObject:
@@ -5064,12 +5157,13 @@ MonoBehaviour:
     min: 0
     max: 0
   lengthLimitTargets: []
-  radius: 0.045
+  radius: 0.03
   sphereColliders: []
   capsuleColliders:
   - {fileID: 1940240933}
   - {fileID: 1275871830}
   - {fileID: 928269373}
+  - {fileID: 418869677}
   panelColliders: []
 --- !u!1 &797547019
 GameObject:
@@ -5117,7 +5211,7 @@ Transform:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 797547019}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5127,7 +5221,7 @@ Transform:
   - {fileID: 90064042}
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &797547022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5965,10 +6059,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stiffnessForce: 1000
   dragForce: 0.1
-  springForce: {x: 0, y: -0.0001, z: 0}
+  springForce: {x: 0, y: -20, z: 0}
   windInfluence: 1
   pivotNode: {fileID: 199663525}
-  angularStiffness: 100
+  angularStiffness: 10
   yAngleLimits:
     active: 0
     min: 0
@@ -5980,7 +6074,8 @@ MonoBehaviour:
   lengthLimitTargets: []
   radius: 0.02
   sphereColliders: []
-  capsuleColliders: []
+  capsuleColliders:
+  - {fileID: 1940240933}
   panelColliders: []
 --- !u!1 &916047684
 GameObject:
@@ -6107,7 +6202,7 @@ MonoBehaviour:
   radius: 0.04
   height: 0.3
   linkedRenderer: {fileID: 0}
-  shouldDrawGizmosThisFrame: 1
+  shouldDrawGizmosThisFrame: 0
 --- !u!4 &928269374
 Transform:
   m_ObjectHideFlags: 0
@@ -6222,6 +6317,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 939878747}
+  - component: {fileID: 939878748}
   m_Layer: 0
   m_Name: IW_RightForeArm
   m_TagString: Untagged
@@ -6245,6 +6341,74 @@ Transform:
   m_Father: {fileID: 528837175}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &939878748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 939878746}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b538b67abf51ccd4688ed1f6e060dbbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HandType: 1
+  m_Root: {fileID: 939878747}
+  m_Prefix: IW_
+  HandBones:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 240459102}
+  - {fileID: 1786607212}
+  - {fileID: 507348607}
+  - {fileID: 0}
+  - {fileID: 1769593808}
+  - {fileID: 646573332}
+  - {fileID: 374513153}
+  - {fileID: 0}
+  - {fileID: 2002193665}
+  - {fileID: 1560122068}
+  - {fileID: 388392510}
+  - {fileID: 0}
+  - {fileID: 144035711}
+  - {fileID: 780959752}
+  - {fileID: 801338811}
+  - {fileID: 0}
+  - {fileID: 1970003290}
+  - {fileID: 1403192941}
+  - {fileID: 426062336}
+  m_Renderer: {fileID: 0}
+  thumbAngles:
+  - 0
+  - 0
+  - 0
+  - 0
+  indexAngles:
+  - 0
+  - 0
+  - 0
+  - 0
+  middleAngles:
+  - 0
+  - 0
+  - 0
+  - 0
+  ringAngles:
+  - 0
+  - 0
+  - 0
+  - 0
+  pinkyAngles:
+  - 0
+  - 0
+  - 0
+  - 0
+  invertFingerRotation: 1
+  thumbMirrorPlaneNormals:
+  - {x: 0, y: 0, z: 1}
+  - {x: 0, y: 0, z: 1}
+  - {x: 0, y: 0, z: 1}
+  - {x: 0, y: 0, z: 1}
 --- !u!1 &948854180
 GameObject:
   m_ObjectHideFlags: 0
@@ -8010,18 +8174,19 @@ MonoBehaviour:
   yAngleLimits:
     active: 1
     min: 0
-    max: 45
+    max: 48
   zAngleLimits:
     active: 1
-    min: -1
-    max: 1
+    min: -60
+    max: 0
   lengthLimitTargets: []
-  radius: 0.045
+  radius: 0.03
   sphereColliders: []
   capsuleColliders:
   - {fileID: 1940240933}
   - {fileID: 928269373}
   - {fileID: 1275871830}
+  - {fileID: 418869677}
   panelColliders: []
 --- !u!1 &1310408269
 GameObject:
@@ -8958,12 +9123,13 @@ MonoBehaviour:
     min: 0
     max: 0
   lengthLimitTargets: []
-  radius: 0.045
+  radius: 0.02
   sphereColliders: []
   capsuleColliders:
   - {fileID: 1940240933}
   - {fileID: 1275871830}
   - {fileID: 928269373}
+  - {fileID: 82500506}
   panelColliders: []
 --- !u!1 &1430879448
 GameObject:
@@ -9825,7 +9991,10 @@ MonoBehaviour:
   lengthLimitTargets: []
   radius: 0.02
   sphereColliders: []
-  capsuleColliders: []
+  capsuleColliders:
+  - {fileID: 1940240933}
+  - {fileID: 928269373}
+  - {fileID: 1275871830}
   panelColliders: []
 --- !u!1 &1559197721
 GameObject:
@@ -10075,6 +10244,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1576713108}
+  - component: {fileID: 1576713109}
   m_Layer: 0
   m_Name: IW_LeftForeArm
   m_TagString: Untagged
@@ -10098,6 +10268,74 @@ Transform:
   m_Father: {fileID: 587711429}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1576713109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1576713107}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b538b67abf51ccd4688ed1f6e060dbbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HandType: 0
+  m_Root: {fileID: 1576713108}
+  m_Prefix: IW_
+  HandBones:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 1363638867}
+  - {fileID: 351149873}
+  - {fileID: 1822398675}
+  - {fileID: 0}
+  - {fileID: 1728262169}
+  - {fileID: 354407143}
+  - {fileID: 1252715934}
+  - {fileID: 0}
+  - {fileID: 853022420}
+  - {fileID: 898452723}
+  - {fileID: 1829224175}
+  - {fileID: 0}
+  - {fileID: 1608045356}
+  - {fileID: 900184616}
+  - {fileID: 1372858547}
+  - {fileID: 0}
+  - {fileID: 337804831}
+  - {fileID: 234534146}
+  - {fileID: 84168965}
+  m_Renderer: {fileID: 0}
+  thumbAngles:
+  - 0
+  - 0
+  - 0
+  - 0
+  indexAngles:
+  - 0
+  - 0
+  - 0
+  - 0
+  middleAngles:
+  - 0
+  - 0
+  - 0
+  - 0
+  ringAngles:
+  - 0
+  - 0
+  - 0
+  - 0
+  pinkyAngles:
+  - 0
+  - 0
+  - 0
+  - 0
+  invertFingerRotation: 0
+  thumbMirrorPlaneNormals:
+  - {x: 0, y: 0, z: 1}
+  - {x: 0, y: 0, z: 1}
+  - {x: 0, y: 0, z: 1}
+  - {x: 0, y: 0, z: 1}
 --- !u!1 &1593222733
 GameObject:
   m_ObjectHideFlags: 0
@@ -10339,6 +10577,7 @@ Transform:
   m_LocalPosition: {x: -0.023920896, y: -0.001390651, z: 0.029470624}
   m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1.0000001}
   m_Children:
+  - {fileID: 418869676}
   - {fileID: 410237346}
   m_Father: {fileID: 1745287082}
   m_RootOrder: 1
@@ -10723,12 +10962,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03118221f4bfcd74ba0ad8075da02411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stiffnessForce: 1000
+  stiffnessForce: 100
   dragForce: 0.1
-  springForce: {x: 0, y: -0.0001, z: 0}
+  springForce: {x: 0, y: -20, z: 0}
   windInfluence: 1
   pivotNode: {fileID: 199663525}
-  angularStiffness: 100
+  angularStiffness: 10
   yAngleLimits:
     active: 0
     min: 0
@@ -10740,7 +10979,8 @@ MonoBehaviour:
   lengthLimitTargets: []
   radius: 0.02
   sphereColliders: []
-  capsuleColliders: []
+  capsuleColliders:
+  - {fileID: 1940240933}
   panelColliders: []
 --- !u!1 &1683091213
 GameObject:
@@ -12198,9 +12438,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.075
-  height: 27.17
+  height: 0.27
   linkedRenderer: {fileID: 0}
-  shouldDrawGizmosThisFrame: 1
+  shouldDrawGizmosThisFrame: 0
 --- !u!4 &1940240934
 Transform:
   m_ObjectHideFlags: 0
@@ -12209,7 +12449,7 @@ Transform:
   m_GameObject: {fileID: 1940240932}
   m_LocalRotation: {x: 0.69592583, y: -0.0098196, z: -0.0067779864, w: 0.71801454}
   m_LocalPosition: {x: -0.079100125, y: 0.0039000097, z: -0.13529997}
-  m_LocalScale: {x: 0.010000023, y: 0.01000002, z: 0.010000036}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1832984768}
   m_RootOrder: 1
@@ -12710,13 +12950,13 @@ MonoBehaviour:
   yAngleLimits:
     active: 1
     min: -55
-    max: 5
+    max: 30
   zAngleLimits:
     active: 1
     min: -25
     max: 25
   lengthLimitTargets: []
-  radius: 0.035
+  radius: 0.015
   sphereColliders: []
   capsuleColliders:
   - {fileID: 1940240933}
