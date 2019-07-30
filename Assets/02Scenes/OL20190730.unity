@@ -10038,7 +10038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1260376072
 Transform:
   m_ObjectHideFlags: 0
@@ -10091,8 +10091,8 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
-  m_SkinnedMotionVectors: 1
+  m_UpdateWhenOffscreen: 1
+  m_SkinnedMotionVectors: 0
   m_Mesh: {fileID: 4300006, guid: 305e21f9a1f779e47bc843625c42e749, type: 3}
   m_Bones:
   - {fileID: 574926353}
@@ -10183,7 +10183,7 @@ SkinnedMeshRenderer:
   - {fileID: 1753488785}
   - {fileID: 490605689}
   m_BlendShapeWeights: []
-  m_RootBone: {fileID: 574926353}
+  m_RootBone: {fileID: 0}
   m_AABB:
     m_Center: {x: 0.63202333, y: 1.3691579, z: 0.06984059}
     m_Extent: {x: 0.014647603, y: 0.07726097, z: 0.062734716}
@@ -10686,7 +10686,7 @@ MonoBehaviour:
   ref_FACIAL: {fileID: 2064722427}
   ref_BlendShapesList:
   - EyeBlink
-  facialMorphing: {fileID: 90064045}
+  facialMorphing: {fileID: 1317149799}
   ratio_Close: 85
   ratio_HalfClose: 20
   ratio_Open: 0
@@ -10721,7 +10721,7 @@ MonoBehaviour:
     press:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 90064045}
+        - m_Target: {fileID: 1317149799}
           m_MethodName: FaceExpressionOn
           m_Mode: 3
           m_Arguments:
@@ -10737,7 +10737,7 @@ MonoBehaviour:
     up:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 90064045}
+        - m_Target: {fileID: 1317149799}
           m_MethodName: FaceExpressionOff
           m_Mode: 1
           m_Arguments:
@@ -10773,7 +10773,7 @@ MonoBehaviour:
     press:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 90064045}
+        - m_Target: {fileID: 1317149799}
           m_MethodName: FaceExpressionOn
           m_Mode: 3
           m_Arguments:
@@ -10789,7 +10789,7 @@ MonoBehaviour:
     up:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 90064045}
+        - m_Target: {fileID: 1317149799}
           m_MethodName: FaceExpressionOff
           m_Mode: 1
           m_Arguments:
@@ -10825,7 +10825,7 @@ MonoBehaviour:
     press:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 90064045}
+        - m_Target: {fileID: 1317149799}
           m_MethodName: FaceExpressionOn
           m_Mode: 3
           m_Arguments:
@@ -10841,7 +10841,7 @@ MonoBehaviour:
     up:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 90064045}
+        - m_Target: {fileID: 1317149799}
           m_MethodName: FaceExpressionOff
           m_Mode: 1
           m_Arguments:
@@ -10877,7 +10877,7 @@ MonoBehaviour:
     press:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 90064045}
+        - m_Target: {fileID: 1317149799}
           m_MethodName: FaceExpressionOn
           m_Mode: 3
           m_Arguments:
@@ -10893,7 +10893,7 @@ MonoBehaviour:
     up:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 90064045}
+        - m_Target: {fileID: 1317149799}
           m_MethodName: FaceExpressionOff
           m_Mode: 1
           m_Arguments:
@@ -10929,7 +10929,7 @@ MonoBehaviour:
     press:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 90064045}
+        - m_Target: {fileID: 1317149799}
           m_MethodName: FaceExpressionOn
           m_Mode: 3
           m_Arguments:
@@ -10945,7 +10945,7 @@ MonoBehaviour:
     up:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 90064045}
+        - m_Target: {fileID: 1317149799}
           m_MethodName: FaceExpressionOff
           m_Mode: 1
           m_Arguments:
@@ -10981,7 +10981,7 @@ MonoBehaviour:
     press:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 90064045}
+        - m_Target: {fileID: 1317149799}
           m_MethodName: FaceExpressionOn
           m_Mode: 3
           m_Arguments:
@@ -10997,7 +10997,7 @@ MonoBehaviour:
     up:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 90064045}
+        - m_Target: {fileID: 1317149799}
           m_MethodName: FaceExpressionOff
           m_Mode: 1
           m_Arguments:
@@ -11033,7 +11033,7 @@ MonoBehaviour:
     press:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 90064045}
+        - m_Target: {fileID: 1317149799}
           m_MethodName: FaceExpressionOn
           m_Mode: 3
           m_Arguments:
@@ -11049,7 +11049,7 @@ MonoBehaviour:
     up:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 90064045}
+        - m_Target: {fileID: 1317149799}
           m_MethodName: FaceExpressionOff
           m_Mode: 1
           m_Arguments:
@@ -14369,7 +14369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1691015379
 AudioListener:
   m_ObjectHideFlags: 0
@@ -14431,7 +14431,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1691015378}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.02, y: 1.29, z: 31.14}
+  m_LocalPosition: {x: -0.02, y: 0.9, z: 54.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17540,7 +17540,7 @@ Transform:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2088870134}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -17549,7 +17549,7 @@ Transform:
   - {fileID: 1317149796}
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &2088870136
 MonoBehaviour:
   m_ObjectHideFlags: 0
