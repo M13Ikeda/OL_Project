@@ -142,7 +142,7 @@ Material:
     - _BumpScale: 5.61
     - _BumpScaleMatcap: 1
     - _CameraRolling_Stabilizer: 0
-    - _CullMode: 2
+    - _CullMode: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
