@@ -3378,7 +3378,7 @@ Transform:
   - {fileID: 788614912}
   - {fileID: 1153693934}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &370880423
 MonoBehaviour:
@@ -4976,7 +4976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 574926353}
   m_Layer: 0
-  m_Name: Root
+  m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6214,7 +6214,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &788835289
 GameObject:
@@ -6368,7 +6368,7 @@ Transform:
   - {fileID: 1531602608}
   - {fileID: 90064042}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &797547022
 MonoBehaviour:
@@ -8159,7 +8159,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 124.069, y: -23.128998, z: 3.9399872}
 --- !u!1 &1022569346
 GameObject:
@@ -8397,7 +8397,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1056817788
 GameObject:
@@ -9668,15 +9668,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 509814923}
   - {fileID: 2066328720}
-  - {fileID: 287333549}
-  - {fileID: 0}
-  - {fileID: 862662919}
   - {fileID: 1295261084}
-  - {fileID: 364681912}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 763278815}
+  - {fileID: 862662919}
   - {fileID: 1178329857}
-  - {fileID: 508424029}
   m_Renderer: {fileID: 0}
   thumbAngles:
   - 0
@@ -10649,6 +10649,7 @@ GameObject:
   - component: {fileID: 1317149799}
   - component: {fileID: 1317149798}
   - component: {fileID: 1317149797}
+  - component: {fileID: 1317149801}
   m_Layer: 0
   m_Name: orion_bone
   m_TagString: Untagged
@@ -11302,6 +11303,385 @@ MonoBehaviour:
   UpdateScaleFromStream: 0
   IsStreamYUp: 1
   InputScale: 0.01
+--- !u!114 &1317149801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1317149795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac25d020a4c43774f96ec65512d8c039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joycon_L_Id: 0
+  joycon_R_Id: 1
+  enableGUI: 0
+  joyconActionList:
+  - name: Smile
+    enablePrimary: 1
+    primary_hand: 1
+    primary_button: 3
+    enableModifier: 0
+    modifier_hand: 0
+    modifier_button: 0
+    enableStick: 0
+    stickHand: 0
+    stickDirection: 0
+    press:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1317149799}
+          m_MethodName: FaceExpressionOn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    up:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1317149799}
+          m_MethodName: FaceExpressionOff
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    down:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    upWithPhysical:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: DKF.JoyconController+PhysicalEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - name: Wink
+    enablePrimary: 1
+    primary_hand: 1
+    primary_button: 2
+    enableModifier: 0
+    modifier_hand: 0
+    modifier_button: 0
+    enableStick: 0
+    stickHand: 0
+    stickDirection: 0
+    press:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1317149799}
+          m_MethodName: FaceExpressionOn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    up:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1317149799}
+          m_MethodName: FaceExpressionOff
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    down:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    upWithPhysical:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: DKF.JoyconController+PhysicalEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - name: Surprised
+    enablePrimary: 1
+    primary_hand: 1
+    primary_button: 4
+    enableModifier: 0
+    modifier_hand: 0
+    modifier_button: 0
+    enableStick: 0
+    stickHand: 0
+    stickDirection: 0
+    press:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1317149799}
+          m_MethodName: FaceExpressionOn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    up:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1317149799}
+          m_MethodName: FaceExpressionOff
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    down:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    upWithPhysical:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: DKF.JoyconController+PhysicalEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - name: Disappointed
+    enablePrimary: 1
+    primary_hand: 1
+    primary_button: 5
+    enableModifier: 0
+    modifier_hand: 0
+    modifier_button: 0
+    enableStick: 0
+    stickHand: 0
+    stickDirection: 0
+    press:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1317149799}
+          m_MethodName: FaceExpressionOn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    up:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1317149799}
+          m_MethodName: FaceExpressionOff
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    down:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    upWithPhysical:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: DKF.JoyconController+PhysicalEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - name: Sad
+    enablePrimary: 1
+    primary_hand: 1
+    primary_button: 1
+    enableModifier: 0
+    modifier_hand: 0
+    modifier_button: 0
+    enableStick: 0
+    stickHand: 0
+    stickDirection: 0
+    press:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1317149799}
+          m_MethodName: FaceExpressionOn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    up:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1317149799}
+          m_MethodName: FaceExpressionOff
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    down:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    upWithPhysical:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: DKF.JoyconController+PhysicalEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - name: Angry
+    enablePrimary: 1
+    primary_hand: 1
+    primary_button: 0
+    enableModifier: 0
+    modifier_hand: 0
+    modifier_button: 0
+    enableStick: 0
+    stickHand: 0
+    stickDirection: 0
+    press:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1317149799}
+          m_MethodName: FaceExpressionOn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    up:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1317149799}
+          m_MethodName: FaceExpressionOff
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    down:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    upWithPhysical:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: DKF.JoyconController+PhysicalEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - name: Guruguru
+    enablePrimary: 1
+    primary_hand: 1
+    primary_button: 11
+    enableModifier: 0
+    modifier_hand: 0
+    modifier_button: 0
+    enableStick: 0
+    stickHand: 0
+    stickDirection: 0
+    press:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1317149799}
+          m_MethodName: FaceExpressionOn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    up:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1317149799}
+          m_MethodName: FaceExpressionOff
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    down:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    upWithPhysical:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: DKF.JoyconController+PhysicalEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &1317373126
 GameObject:
   m_ObjectHideFlags: 0
@@ -14392,8 +14772,8 @@ Camera:
   m_GameObject: {fileID: 1691015378}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 1, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -14431,7 +14811,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1691015378}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.02, y: 0.9, z: 54.2}
+  m_LocalPosition: {x: -0.02, y: 1.1, z: 54.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -15778,6 +16158,104 @@ Transform:
   m_Father: {fileID: 1139297997}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1890509603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1890509608}
+  - component: {fileID: 1890509607}
+  - component: {fileID: 1890509606}
+  - component: {fileID: 1890509605}
+  - component: {fileID: 1890509604}
+  m_Layer: 0
+  m_Name: Camera (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1890509604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1890509603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: f474da155bde9fc4793d0dd44727a0bd, type: 2}
+--- !u!81 &1890509605
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1890509603}
+  m_Enabled: 1
+--- !u!124 &1890509606
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1890509603}
+  m_Enabled: 1
+--- !u!20 &1890509607
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1890509603}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 1, b: 0, a: 0}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.01
+  far clip plane: 1000
+  field of view: 20
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 6
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1890509608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1890509603}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0, y: 1.5, z: 1.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1891172670
 GameObject:
   m_ObjectHideFlags: 0
@@ -16142,7 +16620,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79fd355163aad8b43b1937191600eb13, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79fd355163aad8b43b1937191600eb13, type: 3}
       propertyPath: m_LocalScale.x
@@ -16158,7 +16636,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 79fd355163aad8b43b1937191600eb13, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79fd355163aad8b43b1937191600eb13, type: 3}
@@ -17548,7 +18026,7 @@ Transform:
   - {fileID: 1137722655}
   - {fileID: 1317149796}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &2088870136
 MonoBehaviour:
